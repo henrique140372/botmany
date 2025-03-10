@@ -1,10 +1,11 @@
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 
-const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
+// Usando a variável de ambiente correta para o token
+const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: true });
 
 // Configurações
-const GROUP_ID = process.env.GROUP_ID; // ID do grupo
+const GROUP_ID = process.env.TELEGRAM_GROUP_IDS; // ID ou nome do grupo
 const DELETE_AFTER = 60 * 60 * 1000; // Tempo para deletar mensagens (1 hora)
 
 // Mensagens para divulgação
