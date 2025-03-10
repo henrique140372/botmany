@@ -1,7 +1,6 @@
 {
   "name": "botmany",
   "version": "1.0.0",
-  "description": "Bot do Telegram para divulgação",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
